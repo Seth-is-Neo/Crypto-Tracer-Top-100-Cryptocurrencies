@@ -1,0 +1,73 @@
+Unified Crypto Forensic Investigator Platform — Visual Architecture
+┌───────────────────────────────────────────────────────────────┐
+│                       Blockchain Networks / APIs               │
+│ BTC, ETH, SOL, HBAR, Top-100 Coins                             │
+│ RPC Nodes / Mirror Nodes / Covalent / Alchemy                  │
+│ (Read-only)                                                     │
+└─────────────┬─────────────────────────────────────────────────┘
+              │
+              ▼
+┌───────────────────────────────────────────────┐
+│         Chain Abstraction Layer (Blue)        │
+│ - Normalizes chain data                        │
+│ - RPC calls / event decoding                   │
+│ - Balance queries / block structure           │
+└─────────────┬─────────────────────────────────┘
+              │
+              ▼
+┌───────────────────────────────────────────────┐
+│             Data Processing Layer (Green)     │
+│ - Timeline Reconstruction                      │
+│ - Multi-Hop Graph Tracing                      │
+│ - Risk & Confidence Scoring                    │
+│ - Elite-Tier ML / Graph / NLP Features        │
+│   • Address Classification                     │
+│   • Scam Detection / Cross-Case Linking       │
+│   • Graph Embeddings                           │
+│   • NLP Case Summaries                          │
+└─────────────┬─────────────────────────────────┘
+              │
+              ▼
+┌───────────────────────────────────────────────┐
+│            Alerts & Monitoring (Orange)       │
+│ - Exchange deposits / Bridge / Mixer / Wallet │
+│ - High-risk transaction alerts                │
+│ - Push to dashboard, webhooks, email          │
+└─────────────┬─────────────────────────────────┘
+              │
+              ▼
+┌───────────────────────────────────────────────┐
+│           Security & Integrity (Red)          │
+│ - Read-only enforcement                        │
+│ - Hash outputs & timestamp runs               │
+│ - Digital signature of reports                │
+└─────────────┬─────────────────────────────────┘
+              │
+              ▼
+┌───────────────────────────────────────────────┐
+│           Export & Reporting (Purple)         │
+│ - PDF / CSV / JSON / GraphML                   │
+│ - Methodology, assumptions, chain-of-custody │
+│ - Confidence levels                             │
+└─────────────┬─────────────────────────────────┘
+              │
+              ▼
+┌───────────────────────────────────────────────┐
+│       Interactive Investigator Dashboard      │
+│        (D3.js / Neo4j Bloom / React.js)       │
+│ - Timeline View                                │
+│ - Multi-Hop Graph View                          │
+│ - Alerts Feed                                  │
+│ - Filters: Chain / Wallet / Risk / Asset      │
+│ - Export Buttons: PDF, CSV, JSON, GraphML     │
+│ - NLP Case Summaries                            │
+└───────────────────────────────────────────────┘
+
+💡 Diagram Legend / Color Coding
+Color	Module Type
+Blue	Chain Abstraction Layer
+Green	Data Processing / Core Analysis
+Orange	Alerts & Monitoring
+Red	Security & Integrity
+Purple	Export & Reporting
+No color / final block	Investigator Dashboard / UI
